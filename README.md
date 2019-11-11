@@ -338,7 +338,7 @@ class OrderDtoInputTransformer {
      */
     public function supportsTransformation($data, string $to, array $context = []): bool
     {
-        return Order::class === $to && in_array('delivery:put',$context['groups']);
+        return Order::class === $to && in_array('order:put',$context['groups']);
     }
 
     /**
