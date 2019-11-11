@@ -316,7 +316,7 @@ class OrderDtoInputTransformer {
     protected $entityManager;
 
     /**
-     * ShippingAddressInputTransformer constructor.
+     * OrderDtoInputTransformer constructor.
      *
      * @param DtoFactory                $factory
      * @param EntityManagerInterface $entityManager
