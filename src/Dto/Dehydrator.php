@@ -193,13 +193,4 @@ final class Dehydrator extends AbstractHydrator
 
         }
     }
-
-    /**
-     * @param array $array
-     * @return bool
-     */
-    public function isMultiDimensional(array $array) : bool
-    {
-        return count($array) !== count($array, COUNT_RECURSIVE);
-    }
 }
