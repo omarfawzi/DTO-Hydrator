@@ -1,4 +1,6 @@
 [![Software License][ico-license]](LICENSE.md)
+[![Latest Stable Version](https://poser.pugx.org/edfa3ly-backend/dto-hydrator/v/stable)](https://packagist.org/packages/edfa3ly-backend/dto-hydrator)
+[![Total Downloads](https://poser.pugx.org/edfa3ly-backend/dto-hydrator/downloads)](https://packagist.org/packages/edfa3ly-backend/dto-hydrator)
 
 # Description
 
