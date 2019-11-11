@@ -218,20 +218,20 @@ the `Order` Entity to be transformed and normalized , if you defined an `Ouput` 
 then you should define a transformer your transformer would look like this :
 
 ```
-use DtoHydrator\Factory\DtoFactory;
+use DtoHydrator\Factory\DtoDtoFactory;
 use DtoHydrator\Dto\Hydrator;
 
 class OrderDtoOutputTransformer {
   
-    /** @var Factory $factory */
+    /** @var DtoFactory $factory */
     protected $factory;
 
     /**
      * OrderDtoOutputTransformer constructor.
      *
-     * @param Factory $factory
+     * @param DtoFactory $factory
      */
-    public function __construct(Factory $factory) { $this->factory = $factory; }
+    public function __construct(DtoFactory $factory) { $this->factory = $factory; }
 
 
     /**
@@ -301,13 +301,13 @@ then to your `InputTransformer` in order to be transformed to an `Entity` and pe
 would look like this .
 
 ```
-use DtoHydrator\Factory\DtoFactory;
+use DtoHydrator\Factory\DtoDtoFactory;
 use DtoHydrator\Dto\Dehydrator;
 use Doctrine\ORM\EntityManagerInterface;
 
 class OrderDtoInputTransformer {
    
-    /** @var Factory $factory */
+    /** @var DtoFactory $factory */
     protected $factory;
 
     /** @var EntityManagerInterface $entityManager */
@@ -316,10 +316,10 @@ class OrderDtoInputTransformer {
     /**
      * ShippingAddressInputTransformer constructor.
      *
-     * @param Factory                $factory
+     * @param DtoFactory                $factory
      * @param EntityManagerInterface $entityManager
      */
-    public function __construct(Factory $factory, EntityManagerInterface $entityManager)
+    public function __construct(DtoFactory $factory, EntityManagerInterface $entityManager)
     {
         $this->factory       = $factory;
         $this->entityManager = $entityManager;
