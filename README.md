@@ -12,8 +12,8 @@ Dynamic Hydration for DTO's used by Transformers in [API Platform](https://api-p
 
 ## Usage
 
-While using API Platform , using custom DTO's (defining custom input/output in the `@ApiResource`) dealing requires you to deal with custom
- transformers specially when your DTO is not an Entity .
+While using API Platform , using custom DTO's (defining custom input/output in the `@ApiResource`) requires you to deal with custom
+ transformers specially when your DTO represents an Entity .
  
 1. When using an input transformer **i.e : after the request body is denormalized into a DTO** , 
 you should dehydrate the DTO **i.e** transform it to an entity in order to be persisted .
