@@ -1,0 +1,28 @@
+{
+    "name": "edfa3ly-backend/dto-hydrator",
+    "description": "Dynamic Hydration For Dto's Transformers in API Platform",
+    "type": "symfony-bundle",
+    "require": {
+        "php": ">=7.2",
+        "symfony/property-info": "^4.3",
+        "symfony/serializer": "^4.3",
+        "doctrine/common": "^2.11",
+        "doctrine/orm": "^2.6",
+        "symfony/http-foundation": "^4.3",
+        "symfony/property-access": "^4.3",
+        "symfony/framework-bundle" : "4.2.*",
+        "symfony/dependency-injection": "4.2.*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "omarfawzi",
+            "email": "omarfawzi96@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "DtoHydrator\\": "src/"
+        }
+    }
+}
