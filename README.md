@@ -24,7 +24,7 @@ you should hydrate the DTO **i.e** transform the entity into a DTO in order to b
 3. The embedded objects inside the Dto must be an `@ApiResource` in order to generate the swagger documentation
 
 4. If the embedded objects defines `id` within the denormalized
-request body it will be referenced and the data will be updated , either it will be persisted as a new Entity.
+request body it will be referenced and the data will be updated , either it will be persisted as a new `Entity`.
  
 ## Example
 
@@ -298,9 +298,9 @@ class OrderDtoOutputTransformer {
   }
  ```
 
-The above request will be denormalized to the class mapped to your `Input` defined in the `@ApiResource`
+The above request will be denormalized to your `Input` class defined in the `@ApiResource`
 then to your `InputTransformer` in order to be transformed to an `Entity` and persisted , so your `InputTransformer`
-would look like this .
+would look like this :
 
 ```
 use DtoHydrator\Factory\DtoDtoFactory;
