@@ -1,6 +1,6 @@
 [![Software License][ico-license]](LICENSE.md)
-[![Latest Stable Version](https://poser.pugx.org/edfa3ly-backend/dto-hydrator/v/stable)](https://packagist.org/packages/edfa3ly-backend/dto-hydrator)
-[![Total Downloads](https://poser.pugx.org/edfa3ly-backend/dto-hydrator/downloads)](https://packagist.org/packages/edfa3ly-backend/dto-hydrator)
+[![Latest Stable Version](https://poser.pugx.org/salamov/dto-hydrator/v/stable)](https://packagist.org/packages/salamov/dto-hydrator)
+[![Total Downloads](https://poser.pugx.org/salamov/dto-hydrator/downloads)](https://packagist.org/packages/salamov/dto-hydrator)
 
 # Description
 
@@ -8,7 +8,7 @@ Dynamic Hydration for DTO's used by Transformers in [API Platform](https://api-p
 
 ## Install
 
-`composer require edfa3ly-backend/dto-hydrator`
+`composer require salamov/dto-hydrator`
 
 ## Usage
 

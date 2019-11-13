@@ -1,5 +1,5 @@
 {
-    "name": "edfa3ly-backend/dto-hydrator",
+    "name": "salamov/dto-hydrator",
     "description": "Dynamic Hydration For Dto's Transformers in API Platform",
     "type": "symfony-bundle",
     "require": {
