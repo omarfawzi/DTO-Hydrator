@@ -36,14 +36,16 @@ final class Hydrator extends AbstractHydrator
      */
     protected function hydrateOutput(object $source, object $destination, array $context = [])
     {
-        $destinationAttributes = $this->getAttributes($destination, $context);
+        $destinationAttributes = $this->getAttributes($destination);
 
         $propertyAccessor = PropertyAccess::createPropertyAccessorBuilder()
             ->enableExceptionOnInvalidIndex()
             ->getPropertyAccessor();
 
         foreach ($destinationAttributes as $attribute) {
-            $propertyAccessor->setValue($destination, $attribute, $propertyAccessor->getValue($source, $attribute));
+            if (property_exists($source,$attribute)) {
+                $propertyAccessor->setValue($destination, $attribute, $propertyAccessor->getValue($source, $attribute));
+            }
         }
     }
 }
